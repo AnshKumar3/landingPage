@@ -1,7 +1,7 @@
-"use client"
+
 import { Fade,Slide,Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
-import Navbar from "./component/nav";import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
 export default function Home() {
 
