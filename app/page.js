@@ -72,7 +72,7 @@ console.log(isMobile);
       
       <Slide direction="left">
         <div style={{ color: "grey", marginTop: "0px", textAlign: "center" }}>
-          <img style={{ height: isMobile ? '200px' : '400px', width: isMobile ? '200px' : '400px' }} src="https://www.pngplay.com/wp-content/uploads/7/Headphones-Transparent-PNG.png" alt="Headphones" />
+          <img style={{ height: '100%', width: '100%'}} src="https://www.pngplay.com/wp-content/uploads/7/Headphones-Transparent-PNG.png" alt="Headphones" />
         </div>
       </Slide>
     </div>
