@@ -26,9 +26,9 @@ console.log(isMobile);
 
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: isMobile ? " 1fr " : "1fr ", 
+        gridTemplateColumns: "100%",
         gridTemplateRows: isMobile ? "auto auto auto auto auto auto" : "100px",
-        margin: "100px", 
+        
         alignItems: "center"
       }}>
 
@@ -38,7 +38,7 @@ console.log(isMobile);
               marginTop: '0px', 
               color: "grey", 
               textAlign: "center", 
-              fontSize: isMobile ? "30px" : "60px" // Adjusted font size for mobile view
+              fontSize: '40px' // Adjusted font size for mobile view
             }}>
               SUPER BASS
             </h1>
@@ -49,14 +49,14 @@ console.log(isMobile);
           <img className="responsive-image" style={{ width: "100%", maxWidth: "500px", height: "auto" }} src="https://www.pngarts.com/files/3/Black-Headphone-PNG-High-Quality-Image.png" alt="Headphones" />
         </Reveal>
         
-        <h1 style={{ fontFamily: 'Kalnia Glaze', marginLeft: '20px', marginTop: "200px", fontSize: "50px", color: "white" }}>Overview</h1>
+        <h1 style={{ fontFamily: 'Kalnia Glaze', marginLeft: '20px', marginTop: "00px", fontSize: "50px", color: "white" }}>Overview</h1>
 
         <Slide direction="up">
           <div className="responsive-heading" style={{ fontSize: isMobile ? "30px" : "100px", color: "grey", marginBottom: "50px", textAlign: "center" }}></div>
         </Slide>
         
         <Slide direction="up">
-          <div style={{ fontSize: isMobile ? "10px" : "30px", color: "black", marginRight: '0px', marginTop: isMobile ? "10px" : '100px', marginBottom: isMobile ? '100px' : '0px', textAlign: "center" }}>
+          <div style={{ fontSize: isMobile ? "10px" : "30px", color: "black", marginTop: isMobile ? "10px" : '100px', marginBottom: isMobile ? '100px' : '0px', textAlign: "center" }}>
             this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
             this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
             this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 

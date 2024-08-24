@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.container}>
-        <Link href="/" className={styles.logo}><img style={{height:"50px", width:"50px" ,margin:'20px'}} src='ansh.png'></img></Link>
+        <Link href="/" className={styles.logo}><img style={{height:"40px", width:"100%" }} src='ansh.png'></img></Link>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           <div className={isOpen ? styles.barOpen : styles.bar}></div>
           <div className={isOpen ? styles.barOpen : styles.bar}></div>
