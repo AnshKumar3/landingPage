@@ -25,17 +25,16 @@ export default function Home() {
   console.log(isMobile);
   return (
     <div>
-    
+
 
       <div className="container">
 
         <div className="item" >
           <Slide direction="up">
             <h1 className="responsive-heading" style={{
-              
               color: "grey",
               textAlign: "center",
-              fontSize: '40px' // Adjusted font size for mobile view
+              fontSize: '100px' // Adjusted font size for mobile view
             }}>
               SUPER BASS
             </h1>
@@ -46,12 +45,11 @@ export default function Home() {
             <img className="responsive-image" style={{ width: "100%", maxWidth: "500px" }} src="https://www.pngarts.com/files/3/Black-Headphone-PNG-High-Quality-Image.png" alt="Headphones" />
           </Reveal>
         </div>
+        <div className="item">
+          <h1 className="item" style={{ fontFamily: 'Kalnia Glaze',margin:"0px", fontSize: "50px", color: "white" }}>Overview</h1>
+        </div>
 
-<div className="item">
-        <h1 className="item" style={{ fontFamily: 'Kalnia Glaze', fontSize: "50px", color: "white" }}>Overview</h1>
-</div>
 
-       
 
         <div className="item">
           <Slide direction="up">
@@ -64,9 +62,9 @@ export default function Home() {
           </Slide>
         </div>
         <div className="item">
-        <Slide direction="up">
-          <div className="responsive-heading" style={{ fontSize: isMobile ? "30px" : "40px", color: "grey", marginBottom: "50px", textAlign: "center" }}>MX_1000 DC</div>
-        </Slide>
+          <Slide direction="up">
+            <div className="responsive-heading" style={{ fontSize: isMobile ? "30px" : "40px", color: "grey", marginBottom: "50px", textAlign: "center" }}>MX_1000 DC</div>
+          </Slide>
         </div>
       </div>
 
