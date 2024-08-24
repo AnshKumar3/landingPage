@@ -18,7 +18,7 @@ export default function Home() {
     transform: translate3d(0, 0, 0);
   }
   `;
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
 
   return (
     <>
