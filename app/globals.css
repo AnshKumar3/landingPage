@@ -1,0 +1,42 @@
+
+  body {
+    background: linear-gradient(to bottom, black, #f0f0f0);
+  }
+  
+
+/* Add this to your CSS file */
+
+.responsive-heading {
+  font-size: 50px;
+  text-shadow: 2px 25px 19px rgba(160, 72, 72, 0.5); /* Add shadow to the text */
+
+}
+
+@media (max-width: 768px) {
+  .responsive-heading {
+    font-size: 50px; /* Adjust the font size for small screens */
+    text-shadow: 2px 25px 19px rgba(160, 72, 72, 0.5); /* Add shadow to the text */
+
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    height: 50px; 
+    width: 50px;/* Adjust the font size for small screens */
+    box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.5); /* Add shadow to the image */
+
+  }
+}
+.img{
+  box-shadow: 8px 8px 15px rgba(255, 255, 255, 0.5)
+}
+/* src/App.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wdth,wght@100.1,500&display=swap');
+body {
+  font-family: 'Kalnia Glaze', sans-serif;
+}
+.custom-font {
+  font-family: 'Kalnia Glaze', sans-serif;
+}
