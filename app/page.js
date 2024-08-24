@@ -1,7 +1,9 @@
-
-import { Fade,Slide,Reveal } from "react-awesome-reveal";
+'use client'
+import { Slide,Reveal } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 import { useMediaQuery } from 'react-responsive';
+import React from 'react';
+export { createContext } from 'react';
 
 export default function Home() {
 
