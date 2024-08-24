@@ -26,7 +26,7 @@ console.log(isMobile);
 
       <div style={{ 
         display: "grid", 
-        gridTemplateColumns: isMobile ? " 1fr " : "1fr 1fr", 
+        gridTemplateColumns: isMobile ? " 1fr " : "1fr ", 
         gridTemplateRows: isMobile ? "auto auto auto auto auto auto" : "100px",
         margin: "100px", 
         alignItems: "center"
