@@ -38,7 +38,7 @@ console.log(isMobile);
               marginTop: '0px', 
               color: "grey", 
               textAlign: "center", 
-              fontSize: isMobile ? "30px" : "100px" // Adjusted font size for mobile view
+              fontSize: isMobile ? "30px" : "60px" // Adjusted font size for mobile view
             }}>
               SUPER BASS
             </h1>
