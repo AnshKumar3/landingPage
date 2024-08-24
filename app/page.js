@@ -21,7 +21,7 @@ export default function Home() {
   const isMobile = useMediaQuery({ query: '(max-width: 1000px)' });
 
   return (
-    <>
+    <div className="responsive-div">
       <h1 className="custom-font">Premium</h1>
 
       <div style={{ 
@@ -72,6 +72,6 @@ export default function Home() {
           <img style={{ height: isMobile ? '200px' : '600px', width: isMobile ? '200px' : '600px' }} src="https://www.pngplay.com/wp-content/uploads/7/Headphones-Transparent-PNG.png" alt="Headphones" />
         </div>
       </Slide>
-    </>
+    </div>
   );
 }
