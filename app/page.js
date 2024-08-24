@@ -4,7 +4,9 @@ import { keyframes } from "@emotion/react";
 import { useMediaQuery } from 'react-responsive';
 import React from 'react';
 export { createContext } from 'react';
-
+import "./Navbar.module.css"
+import "./component/nav"
+import "./styles.css"
 export default function Home() {
 
   const customAnimation = keyframes`
@@ -20,59 +22,57 @@ export default function Home() {
   }
   `;
   const isMobile = useMediaQuery({ query: '(max-width: 760px)' });
-console.log(isMobile);
+  console.log(isMobile);
   return (
-    <div className="responsive-div">
-      <h1 className="custom-font"></h1>
+    <div>
+    
 
-      <div style={{ 
-        display: "grid", 
-        gridTemplateColumns: "100%",
-        gridTemplateRows: isMobile ? "auto auto auto auto auto auto" : "100px",
-        
-        alignItems: "center"
-      }}>
+      <div className="container">
 
-        <div style={{ height: "200px", margin: "0px" }}>
+        <div className="item" >
           <Slide direction="up">
-            <h1 className="responsive-heading" style={{ 
-              marginTop: '100px', 
-              color: "grey", 
-              textAlign: "center", 
+            <h1 className="responsive-heading" style={{
+              
+              color: "grey",
+              textAlign: "center",
               fontSize: '40px' // Adjusted font size for mobile view
             }}>
               SUPER BASS
             </h1>
           </Slide>
         </div>
-        
-        <Reveal keyframes={customAnimation}>
-          <img className="responsive-image" style={{ width: "100%", maxWidth: "500px" }} src="https://www.pngarts.com/files/3/Black-Headphone-PNG-High-Quality-Image.png" alt="Headphones" />
-        </Reveal>
-        
-        <h1 style={{ fontFamily: 'Kalnia Glaze', fontSize: "50px", color: "white" }}>Overview</h1>
+        <div className="item">
+          <Reveal keyframes={customAnimation}>
+            <img className="responsive-image" style={{ width: "100%", maxWidth: "500px" }} src="https://www.pngarts.com/files/3/Black-Headphone-PNG-High-Quality-Image.png" alt="Headphones" />
+          </Reveal>
+        </div>
 
-        <Slide direction="up">
-          <div className="responsive-heading" style={{  color: "grey", textAlign: "center" }}></div>
-        </Slide>
-        
-        <Slide direction="up">
-          <div>
-            this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
-            this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
-            this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
-            this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh 
-          </div>
-        </Slide>
-        
+<div className="item">
+        <h1 className="item" style={{ fontFamily: 'Kalnia Glaze', fontSize: "50px", color: "white" }}>Overview</h1>
+</div>
+
+       
+
+        <div className="item">
+          <Slide direction="up">
+            <div>
+              this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh
+              this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh
+              this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh
+              this is the best headphone in india world no. one brand...asdfghj asdfg hasdfgh asdfgh asdfgh asdfgh asdfgh asdfgh
+            </div>
+          </Slide>
+        </div>
+        <div className="item">
         <Slide direction="up">
           <div className="responsive-heading" style={{ fontSize: isMobile ? "30px" : "40px", color: "grey", marginBottom: "50px", textAlign: "center" }}>MX_1000 DC</div>
         </Slide>
+        </div>
       </div>
-      
+
       <Slide direction="left">
         <div style={{ color: "grey", marginTop: "0px", textAlign: "center" }}>
-          <img style={{ height: '100%', width: '100%'}} src="https://www.pngplay.com/wp-content/uploads/7/Headphones-Transparent-PNG.png" alt="Headphones" />
+          <img style={{ height: '100%', width: '100%' }} src="https://www.pngplay.com/wp-content/uploads/7/Headphones-Transparent-PNG.png" alt="Headphones" />
         </div>
       </Slide>
     </div>
