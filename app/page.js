@@ -11,6 +11,7 @@ export default function Home() {
   from {
     opacity: 0;
     transform: translate3d(-200px, -100px, 0);
+    overflow:"hidden"
   }
 
   to {
@@ -33,7 +34,7 @@ console.log(isMobile);
       }}>
 
         <div style={{ height: "200px", margin: "0px" }}>
-          <Slide direction="right">
+          <Slide direction="up">
             <h1 className="responsive-heading" style={{ 
               marginTop: '100px', 
               color: "grey", 
